@@ -24,7 +24,7 @@
 
 
 
-  <meta name="keywords" content="感悟,随笔," />
+  <meta name="keywords" content="感悟,技术," />
 
 
 
@@ -47,7 +47,7 @@
 
 
 
-  <title> 毕竟有了开始，一切才有可能 // whiteplane </title>
+  <title> 谈谈这个博客的诞生之路 // whiteplane </title>
 </head>
 
 <body>
@@ -150,7 +150,7 @@
           
           
             
-              毕竟有了开始，一切才有可能
+              谈谈这个博客的诞生之路
             
           
         </h1>
@@ -158,7 +158,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-07-09
+          发表于 2015-07-13
         </span>
 
         
@@ -167,8 +167,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2015/07/09/new-start/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/09/new-start/"></span>
+            <a href="/2015/07/13/talk-about-this-blog/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/13/talk-about-this-blog/"></span>
             </a>
           </span>
           
@@ -182,30 +182,123 @@
       
 
       
-        <p><img src="http://7xk8wh.com1.z0.glb.clouddn.com/post-newstar-img-1.jpeg" alt="post_banner" title="Thief by Marion Vacca on 500px"></p>
+        <p><img src="http://7xk8wh.com1.z0.glb.clouddn.com/post-aboutblog-img1.jpeg" alt="post_banner" title="The Lonely Moscow"></p>
 <blockquote>
-<p><a href="https://500px.com/photo/104278811/thief-by-marion-vacca" target="_blank" rel="external">Thief by Marion Vacca on 500px</a></p>
+<p><a href="https://500px.com/photo/114672847/the-lonely-moscow-3-by-%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B9-%D0%A7%D0%B5%D1%80%D0%BD%D1%8F%D0%B4%D1%8C%D0%B5%D0%B2-georgiy-chernyadyev-" target="_blank" rel="external">The Lonely Moscow 3 by Georgiy Chernyadyev on 500px</a></p>
 </blockquote>
-<h2 id="我是搭博客的小能手">我是搭博客的小能手</h2><p>先是在Godaddy上买了域名(<a href="http://www.pmwangwang.com" target="_blank" rel="external">http://www.pmwangwang.com</a>) 和主机，经历重重围剿，搭上Wordpress博客上线。</p>
-<p>然后发现海外服务器实在太卡，连写个小短文都要卡死半天，写了一篇就放弃了。</p>
-<p>之后突然Github的Pages貌似不卡了，看到之前用hexo架的静态博客访问速度还不错，心里痒痒的，要不要再把博客搭起来。</p>
-<p>白天工作太忙，折腾了两天，博客算是搭起来了，不知道能不能坚持写下去。  </p>
-<a id="more"></a>
-<p>「阿西吧」，每次搭博客的时间比写博客都要长～～</p>
-<p>希望有时间能把博客满满写起来，如果github不行了，之后再买阿里云吧，静态页面部署起来应该也蛮简单的～</p>
-<p>「阿里云太贵了～！」</p>
-<p>屌丝穷啊，习惯没养起来，先把钱给花了会不会不太好？</p>
-<p>就这样吧，域名的钱都已经花了，不好好利用起来，对不起自己的钱包啊～</p>
-<hr>
-<h2 id="说正经的，我还是有情怀的">说正经的，我还是有情怀的</h2><p>有其他PM同学问我：</p>
-<p>「为什么要这么千幸万苦的折腾？」</p>
-<p>我心想，之前毕竟我也是读过几年代码的人，淡淡的回应道:</p>
-<p>「Because I Can！」  </p>
-<p>装逼遭雷劈，被打脸不是一次两次了，其实只是工作累了，找点事情调剂下。</p>
-<p>单纯只是为了造物的乐趣吧～科科～  </p>
-<p>不管能走多远，希望是个美好的旅程。</p>
+<h2 id="写在前面">写在前面</h2><p>自己要的博客，哭着也得搭完。<br>这几天工作忙的要死，但是博客搭的一半，总感觉有事情没做完，半夜下班回家继续折腾。</p>
+<p>像我这么喜新厌旧的的人，不知道什么时候又放弃了呢。<br>乘着新鲜的劲头，赶紧记录下搭建的关键要素，分享给大家。 </p>
 <p><br></p>
-<blockquote class="blockquote-center"><br>毕竟有了开始，一切才有可能<br><br>你说呢 ？<br></blockquote>
+<blockquote>
+<p><em>主要是怕自己忘了，顺便联系下Markdown的语法</em></p>
+</blockquote>
+<p><br></p>
+<hr>
+<h2 id="Github_Pages">Github Pages</h2><p>话说之前在的<em>Godaddy</em>上买的主机即使挂上GAE有时候连 <em>cPanel</em> 都连不上，基本都快奔溃了，很多时候真的有对大众化局域网彻底崩溃</p>
+<p><em>Github Pages</em> 是针对个人主页定制的发布系统，基本没有流量限制，空间大概在300MB之内（<del>细节我也便不下去了</del>）。</p>
+<p><em>Github Pages</em>可以部署静态页面，还蛮适合的，关键是：</p>
+<blockquote class="blockquote-center"><br><em>不要钱啊~！</em><br><em>不要钱啊~！</em><br><em>不要钱啊~！</em><br></blockquote>
+
+<p>重要的事情说三遍</p>
+<p>Github服务器在海外，访问速度稍微差一点，也有被屏蔽的经历，可能要随时准备备份跑路</p>
+<p>其实还是因为懒~</p>
+<p>因为在海外，不用备案，海外买的域名可以直接通过设置域名的 <em>CNAME</em> 进行绑定访问，瞬间博客的逼格就上来了。</p>
+<a id="more"></a>
+<hr>
+<h2 id="Hexo">Hexo</h2><p><a href="https://hexo.io/" target="_blank" rel="external"><em>Hexo</em></a> 是个基于node.js的静态博客生成工具，台湾少年 <em>Tommy Chen</em> 创作，貌似是为了解决<a href="http://octopress.org/" target="_blank" rel="external"><em>Octopress</em></a>（基于 <a href="http://jekyllrb.com/" target="_blank" rel="external"><em>jekllrb</em></a> powered by ruby）慢的问题。</p>
+<p>本身我本不了解node.js，好奇心使然，尝试了下，加上Hexo的中文资料不错，就试着用了起来。</p>
+<p><em>Hexo</em> 的安装，部署什么的都很容易，教程页蛮简单的，如果不需要深度定制主题的话，很快就能搞定。</p>
+<p>网上教程很多，过程中主要参考了以下位博客，感谢各位的分享：</p>
+<ol>
+<li><a href="http://ibruce.info/2013/11/22/hexo-your-blog/?utm_source=tuicool" target="_blank" rel="external">不如-hexo你的博客</a></li>
+<li><a href="http://segmentfault.com/a/1190000002592993" target="_blank" rel="external">机智阿卡林酱-Hexo 3.0 静态博客使用指南</a></li>
+</ol>
+<p><br></p>
+<p>PS：</p>
+<blockquote>
+<ul>
+<li>需要提一下，如果对github不熟悉的朋友，很多教程开始的时候，都是让大家去配置SSH，很多小白估计都搞不清楚。</li>
+<li>现在Hexo3.0已经支持https部署，不需要配置ssh了，大家跳过这个步骤吧</li>
+</ul>
+</blockquote>
+<p><br></p>
+<hr>
+<h2 id="Hexo-Theme-Next">Hexo-Theme-Next</h2><p>不得不提的是，当初选择Hexo的一个重要原因，就是知乎看到了<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next主题</a>，当然作者<a href="https://github.com/iissnan" target="_blank" rel="external">iissnan</a>也是国人。</p>
+<p>目前（2015-07-11）这个博客正在使用该主题，真的很喜欢，感谢作者。</p>
+<p>不得不说的是，在折腾这个主题的时候，发现Fancybox图片展示插件，弹出的时候没有显示图片标题，这个时候作为PM的强迫症就起来了。</p>
+<p>折腾了一个晚上发现，原来配置的时候没有在新生成的<code>&lt;a&gt;</code>标签带上原图片的<code>title</code>属性，主要是我的coding能力已经很屎了。</p>
+<p>发现问题以后，用我蹩脚的js阅读能力，添加了修正，发出了我人生第一次</p>
+<p><strong>Github Pull Request</strong>：</p>
+<blockquote>
+<p>   <a href="https://github.com/iissnan/hexo-theme-next/pull/279" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next/pull/279</a></p>
+</blockquote>
+<p>（*＾3＾）第一次就这么献出去了,不知道有没有被merge</p>
+<p><br><br>PS：</p>
+<blockquote>
+<ul>
+<li>因为就是简单的一句代码修改，所以直接pull request了，通过搜索可以了解到，这不是好的合并代码习惯。</li>
+<li>Git博大精深，由于现在主天赋是PM，不是Coder了，先留下写关键词，以后学习：<br> <strong>Pull</strong>，<strong>Fetch</strong>， <strong>Merge</strong></li>
+</ul>
+</blockquote>
+<p><br></p>
+<hr>
+<h2 id="Markdown">Markdown</h2><p>Markdown简单说就是一种简化的标记语言，可以兼容html，可以通过parser解析成HTML，由于良好的书写流畅度，已经被很多博客、维基系统采用。</p>
+<p>也就是说，如果想要快速排版和书写，可以直接使用markdown简单标记，回过头来如果对文章的布局满意可以通过HTML进行调整。</p>
+<p>Markdown作为语言，必然有自己的语法，哈哈哈。</p>
+<p><br></p>
+<blockquote>
+<ul>
+<li><em>前面说的那么好，裤子都脱了你让我学语法？</em></li>
+</ul>
+</blockquote>
+<p>语法再简单，也是要学的，不过还好网上很多文章有总结，并且有很多在线编辑器可以边写边看效果。</p>
+<p>这篇文章里我也尝试了大部分的格式语法，其实不到一天基本都掌握，实在记不住的，多用用就OK了。</p>
+<p>贴出若干参考的文章与工具：</p>
+<ol>
+<li><a href="http://ibruce.info/2013/11/26/markdown/" target="_blank" rel="external">不如-markdown简明语法</a></li>
+<li><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">Markdown 语法说明 (简体中文版)</a></li>
+<li><a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">Cmd-Markdown在线编辑器</a></li>
+</ol>
+<p><br></p>
+<blockquote>
+<ul>
+<li><em>等等，前面说的parsers是什么鬼，为什么觉得是一个大坑！</em></li>
+</ul>
+</blockquote>
+<p>其实与浏览器解析HTML一样，不同浏览器会有不同的解析结果。对于markdown来说，不同的博客、wiki系统在基础Markdown协议上，会做一定的扩展。</p>
+<p>就拿github来说，其对Markdown的支持，称为github favorted markdown，简称GFM，就丧心病狂的添加了emoji表情的支持。</p>
+<p><br></p>
+<blockquote>
+<ul>
+<li><em>那么我应该通过什么编辑器来写markdown从而生成我的blog呢？</em></li>
+</ul>
+</blockquote>
+<p>市面上的markdown编辑器有很多，不管mac，还是win都有不错的产品。</p>
+<p>我这里的使用的sublime，有没有很眼熟？</p>
+<p>就是跨平台的全能编辑器, <em>Powered by Python</em> (快来个人抓走这个安利 <em>Python</em> 的菜比~)</p>
+<blockquote class="blockquote-center"><br> Life is short, use Python<br></blockquote>
+
+<p><br></p>
+<p>目前，我的书写环境主要是：</p>
+<ul>
+<li><p><a href="http://www.sublimetext.com/" target="_blank" rel="external">Sublime2</a><br>  编辑器的本体，跨平台，小巧方便，插件多，如果是PM，作为备用的文本编辑器也是很好的，万一要编辑下html，或者一些配置文件什么的方便很多。</p>
+</li>
+<li><p><a href="https://packagecontrol.io/packages/Markdown%20Preview" target="_blank" rel="external">markdown preview</a><br>  Sublime的Markdown 预览插件，设置快捷键后可以方便的指定浏览器中打开经过解析的markdown。</p>
+</li>
+<li><p><a href="https://packagecontrol.io/packages/LiveReload" target="_blank" rel="external">Live reload</a><br>  markdown preview通过该插件，当编辑的markdown文件保存后，自动刷新对应的浏览器预览页面</p>
+</li>
+<li><p><a href="https://packagecontrol.io/packages/Theme%20-%20Spacegray" target="_blank" rel="external">Theme Spacegray</a><br>  不错的subline主题，其中的配色方案带上了markdown的语法适配。</p>
+</li>
+</ul>
+<p><br></p>
+<hr>
+<h2 id="写在最后">写在最后</h2><p>其实这套大保健下来还是很伤神的，没有开发经验的同学很容易中途放弃，与其说是执着，不如说是挺享受自己动手一点点搭建的过程。</p>
+<p>搭建还是一小部分工作，日后的博客维护估计还是很伤肾的，有时候想想，买主机上个Wordpress，或者简书，各种专栏，甚至微信公众号都是不错的选择。</p>
+<p>总而言之，可能这一切，不是为了记录，也不是为了创作，而只是为了有趣吧。</p>
+<blockquote class="blockquote-center"><br> Just for Fun<br> Just for Life<br></blockquote>
+
+
+
 
 
       
@@ -217,7 +310,7 @@
           
             <a href="/tags/感悟/"> #感悟 </a>
           
-            <a href="/tags/随笔/"> #随笔 </a>
+            <a href="/tags/技术/"> #技术 </a>
           
         </div>
       
@@ -226,11 +319,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/07/13/talk-about-this-blog/">谈谈这个博客的诞生之路</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/07/09/new-start/">毕竟有了开始，一切才有可能</a>
             
           </div>
         </div>
@@ -250,8 +343,8 @@
     
       <div class="comments" id="comments">
         
-          <div class="ds-thread" data-thread-key="2015/07/09/new-start/"
-               data-title="毕竟有了开始，一切才有可能" data-url="http://yoursite.com/2015/07/09/new-start/">
+          <div class="ds-thread" data-thread-key="2015/07/13/talk-about-this-blog/"
+               data-title="谈谈这个博客的诞生之路" data-url="http://yoursite.com/2015/07/13/talk-about-this-blog/">
           </div>
         
       </div>
@@ -352,7 +445,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#我是搭博客的小能手"><span class="nav-number">1.</span> <span class="nav-text">我是搭博客的小能手</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#说正经的，我还是有情怀的"><span class="nav-number">2.</span> <span class="nav-text">说正经的，我还是有情怀的</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Github_Pages"><span class="nav-number">2.</span> <span class="nav-text">Github Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-number">3.</span> <span class="nav-text">Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-Theme-Next"><span class="nav-number">4.</span> <span class="nav-text">Hexo-Theme-Next</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown"><span class="nav-number">5.</span> <span class="nav-text">Markdown</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#写在最后"><span class="nav-number">6.</span> <span class="nav-text">写在最后</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
