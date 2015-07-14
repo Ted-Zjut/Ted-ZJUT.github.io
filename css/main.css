@@ -295,6 +295,9 @@ h6 {
 ul {
   list-style: square;
 }
+a {
+  word-wrap: break-word;
+}
 hr {
   margin: 40px 0;
   height: 3px;
@@ -947,6 +950,16 @@ body {
     border-top: 1px solid #ddd;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-nav {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) {
+  .site-nav {
+    display: block !important;
+  }
+}
 .menu {
   margin-top: 20px;
   padding-left: 0;
@@ -1135,7 +1148,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8fa2c6;
+  background: #9d6650;
 }
 .sidebar-nav {
   margin: 0;
