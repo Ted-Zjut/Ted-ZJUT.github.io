@@ -44,13 +44,16 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="产品经理的技术修养之路 - Android适配篇">
 <meta property="og:url" content="http://yoursite.com/2015/08/02/RD-PMTechList-Android-1/index.html">
-<meta property="og:site_name" content="whiteplane">
+<meta property="og:site_name" content="whiteplane | 我是">
 <meta property="og:description" content="Building No. 44 Lawn by Dinesh Harjani on 500px
 
 我与Android的孽缘遥想我的学生时代经济有限，又爱折腾，09年底的时候就入手了HTC G2，当时安卓力压windows miobile，在iphone触摸不到的地方，生根立命，野蛮生长
 目前而言，我的主要工作内容是移动端App的产品设计，主要工作经历集中在Android（为了缩减字数，下文译为「安">
 <meta property="og:image" content="http://7xk8wh.com1.z0.glb.clouddn.com/post-pmtechlist-anrdoid-img1.jpeg">
-<meta property="og:updated_time" content="2015-08-03T17:51:58.000Z">
+<meta property="og:image" content="http://7xk8wh.com1.z0.glb.clouddn.com/static/images/emui_notify.png">
+<meta property="og:image" content="http://7xk8wh.com1.z0.glb.clouddn.com/static/images/flyme_sb.png">
+<meta property="og:image" content="http://7xk8wh.com1.z0.glb.clouddn.com/static/images/flyme_stateicon.png">
+<meta property="og:updated_time" content="2015-08-09T16:31:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="产品经理的技术修养之路 - Android适配篇">
 <meta name="twitter:description" content="Building No. 44 Lawn by Dinesh Harjani on 500px
@@ -66,7 +69,7 @@
   };
 </script>
 
-    <title> 产品经理的技术修养之路 - Android适配篇 // whiteplane </title>
+    <title> 产品经理的技术修养之路 - Android适配篇 // whiteplane | 我是 </title>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 <!--[if lte IE 8]>
@@ -101,7 +104,7 @@
       <span class="logo">
         <i class="icon-logo"></i>
       </span>
-      <span class="site-title">whiteplane</span>
+      <span class="site-title">whiteplane | 我是</span>
   </a>
   <span class="logo-line-after"><i></i></span>
 </h1>
@@ -330,19 +333,22 @@
 <li><p><strong>Emotion UI的通知栏</strong>：</p>
 <p> Emotion UI 简称 EMUI，在3.0的设计中，对通知栏通知假如了加入了时间轴设计。看上去美美的设计，导致实际通知栏的通知可显示区域被严重压缩，导致本来可以正常显示的通知栏内容，无法正常显示甚至错位。</p>
 <p> 这个设计典型的是为了所谓「美」而发生的拍脑袋设计，完全没有考虑过兼容性问题对UI美观性带来的更大伤害。</p>
+ <img title="Emotion" alt="Emotion" src="http://7xk8wh.com1.z0.glb.clouddn.com/static/images/emui_notify.png">
 <p> <br></p>
 </li>
 <li><p><strong>Flyme的Smart Bar</strong></p>
 <p> Smart Bar 简称SB，作为魅族自作聪明的设计，加上之前产品独树一帜的16:10或者15:9长宽比，导致大量应用UI设计在Flyme上表现极其不佳，多下巴就忍了，更可怕的是UI错位。</p>
 <p> 长宽比是为了阅读体验可以忍，SB彻底是对自己太自信…</p>
+ <img title="Flyme的Smart" alt="Flyme的Smart" src="http://7xk8wh.com1.z0.glb.clouddn.com/static/images/flyme_sb.png">
 <p> <br></p>
 </li>
 <li><p><strong>MIUI 6 禁止自定义状态栏图标</strong></p>
-<p> 即使有一万个理由，MIUI V6 不支持自定义状态栏图标这件事真的伤透了我这只产品汪，每次有用户来投诉我们的产品的自定义状态栏功能无法显示的时候，我只能：</p>
+<p> 即使有一万个理由，MIUI V6 不支持自定义状态栏图标。如果你的产品设置了自定义的状态图标，即使MIUI权限管理中点击显示图标，显示的也是应用的<em>icon</em>, <em>icon</em>, <em>icon</em>。 这件事真的伤透了我这只产品汪，每次有用户来投诉我们的产品的自定义状态栏功能无法显示的时候，我只能：「呵呵」</p>
 <p> <br></p>
 </li>
 <li><p><strong>Flyme 4 自动替换了常驻状态栏的图标样式</strong></p>
-<p> Flyme 4 之后为了保证系统UI的设计一致性，主动替换了其他应用APP的常驻通知栏，大厂的应用还好，会重新画一个，小厂的话，不通过BD联系的花，直接给一个<strong> ∞ </strong>，没错，就是无穷号。</p>
+<p> Flyme 4 之后为了保证系统UI的设计一致性，主动替换了其他应用APP的常驻通知栏，大厂的应用还好，会重新画一个，小厂的话，不通过BD联系的花，直接给一个<strong> ∞ </strong>，没错，就是无穷号。当然比起MIUI6来，我觉得起码看上去好多了。</p>
+ <img title="Flyme的状态栏" alt="Flyme的状态栏" src="http://7xk8wh.com1.z0.glb.clouddn.com/static/images/flyme_stateicon.png">
 </li>
 </ol>
 <p><br></p>
